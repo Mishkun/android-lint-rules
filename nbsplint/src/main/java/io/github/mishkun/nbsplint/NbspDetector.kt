@@ -26,7 +26,7 @@ class NbspDetector : ResourceXmlDetector() {
             nbspFindings.forEach { (foundWithoutNbsp, range) ->
 
                 val fix = fix()
-                        .name("add nbsp")
+                        .name("Add nbsp")
                         .replace()
                         .text(" ")
                         .with("&#160;")

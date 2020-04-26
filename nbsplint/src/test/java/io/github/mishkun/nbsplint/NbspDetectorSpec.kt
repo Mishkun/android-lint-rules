@@ -32,7 +32,7 @@ class NbspDetectorSpec : StringSpec({
                     0 errors, 1 warnings
                 """.trimIndent())
                 .expectFixDiffs("""
-                    Fix for res/values/strings.xml line 2: add nbsp:
+                    Fix for res/values/strings.xml line 2: Add nbsp:
                     @@ -2 +2
                     -     <string name="about">о нас</string>
                     +     <string name="about">о&#160;нас</string>
@@ -55,7 +55,7 @@ class NbspDetectorSpec : StringSpec({
                     0 errors, 1 warnings
                 """.trimIndent())
                 .expectFixDiffs("""
-                    Fix for res/values/strings.xml line 2: add nbsp:
+                    Fix for res/values/strings.xml line 2: Add nbsp:
                     @@ -2 +2
                     -     <string name="jaggered_case">ЧеРеЗ нас</string>
                     +     <string name="jaggered_case">ЧеРеЗ&#160;нас</string>
@@ -83,15 +83,15 @@ class NbspDetectorSpec : StringSpec({
                     0 errors, 3 warnings
                 """.trimIndent())
                 .expectFixDiffs("""
-                    Fix for res/values/strings.xml line 2: add nbsp:
+                    Fix for res/values/strings.xml line 2: Add nbsp:
                     @@ -2 +2
                     -     <string name="about">о нас и за нас</string>
                     +     <string name="about">о&#160;нас и за нас</string>
-                    Fix for res/values/strings.xml line 2: add nbsp:
+                    Fix for res/values/strings.xml line 2: Add nbsp:
                     @@ -2 +2
                     -     <string name="about">о нас и за нас</string>
                     +     <string name="about">о нас и&#160;за нас</string>
-                    Fix for res/values/strings.xml line 2: add nbsp:
+                    Fix for res/values/strings.xml line 2: Add nbsp:
                     @@ -2 +2
                     -     <string name="about">о нас и за нас</string>
                     +     <string name="about">о нас и за&#160;нас</string>
@@ -117,11 +117,11 @@ class NbspDetectorSpec : StringSpec({
                     0 errors, 2 warnings
                 """.trimIndent())
                 .expectFixDiffs("""
-                    Fix for res/values/strings.xml line 2: add nbsp:
+                    Fix for res/values/strings.xml line 2: Add nbsp:
                     @@ -2 +2
                     -     <string name="many_hours">3500 часов</string>
                     +     <string name="many_hours">3500&#160;часов</string>
-                    Fix for res/values/strings.xml line 3: add nbsp:
+                    Fix for res/values/strings.xml line 3: Add nbsp:
                     @@ -3 +3
                     -     <string name="some_meters">%d метров</string>
                     +     <string name="some_meters">%d&#160;метров</string>
