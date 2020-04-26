@@ -28,7 +28,7 @@ tasks.jar {
 dependencies {
     val lintVersion = "26.5.0"
     val kotestVersion = "4.0.5"
-    implementation(kotlin("stdlib-jdk8"))
+    compileOnly(kotlin("stdlib-jdk8"))
     compileOnly("com.android.tools.lint:lint-api:$lintVersion")
     compileOnly("com.android.tools.lint:lint-checks:$lintVersion")
     testImplementation("com.android.tools.lint:lint:$lintVersion")
