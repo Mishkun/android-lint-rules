@@ -8,6 +8,10 @@ android {
     defaultConfig {
         minSdkVersion(Sdk.MIN_SDK_VERSION)
     }
+
+    libraryVariants.all {
+        generateBuildConfig?.enabled = false
+    }
 }
 
 dependencies {
