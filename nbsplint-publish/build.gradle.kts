@@ -15,6 +15,5 @@ android {
 }
 
 dependencies {
-//    lintPublish(project(":nbsplint"))
-    lintChecks(project(":nbsplint"))
+    lintPublish(project(":nbsplint"))
 }
