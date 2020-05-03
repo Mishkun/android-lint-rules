@@ -1,0 +1,36 @@
+[[./logo.png]]
+
+
+* Android lint rules
+[[https://api.bintray.com/packages/mishkun/mAndroidLint-rules/nbsp-lint/images/download.svg]]
+
+This is the repository with some custom Android lint rules of mine.
+** Nbsp lint
+Russian typography rules [[https://ru.wikipedia.org/wiki/Неразрывный_пробел#Правила_применения_в_наборе][state]] that there could not be any line
+breaks after some propositions, conjunctions and particles. So you have to use
+non-breaking spaces after these words. This rule helps to look after that in
+your Russian string resources.
+[[./demo.gif]]
+*** Usage
+You just add the library to dependencies and Android Studio will automatically
+enable these checks for you. Note that there is no actual code in the library.
+It is only for easy Android Studio integration. To customize the severity of the
+lint check or other properties, refer to android lint [[https://developer.android.com/studio/write/lint#pref][documentation]].
+**** Gradle (Groovy dsl)
+#+begin_src groovy
+repositories {
+  maven { url "https://dl.bintray.com/mishkun/mAndroidLint-rules" }
+}
+dependencies {
+  implementation "io.github.mishkun:nbsp-android-lint:1.0.0"
+}
+#+end_src
+**** Gradle (Kotlin dsl)
+#+begin_src kotlin
+repositories {
+  url("https://dl.bintray.com/mishkun/mAndroidLint-rules")
+}
+dependencies {
+  implementation("io.github.mishkun:nbsp-android-lint:1.0.0")
+}
+#+end_src
