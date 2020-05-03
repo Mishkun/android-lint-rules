@@ -28,7 +28,7 @@ dependencies {
 **** Gradle (Kotlin dsl)
 #+begin_src kotlin
 repositories {
-  url("https://dl.bintray.com/mishkun/mAndroidLint-rules")
+  maven("https://dl.bintray.com/mishkun/mAndroidLint-rules")
 }
 dependencies {
   implementation("io.github.mishkun:nbsp-android-lint:1.0.0")
